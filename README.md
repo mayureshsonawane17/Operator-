@@ -14,6 +14,11 @@ Runs locally. Minimum words, maximum action.
 - Git operations (status, diff, commit, branches)
 - UI library integration: shadcn/ui, MUI, PrimeReact, Tailwind
 
+### 🖼️ Image Generation
+- **Alem AI Plus** integration for text-to-image generation
+- Install skill: `operator install https://github.com/yrn-dev/operator-alem-image-plus`
+- Supports portraits, product shots, storyboards, posters, infographics
+
 ### 🔬 Research & Analysis
 - **Deep Research** — web search, Wikipedia, DuckDuckGo with cross-verification
 - Collects data from multiple sources, compares, assesses credibility
@@ -27,7 +32,7 @@ Runs locally. Minimum words, maximum action.
 - Web scraping via Puppeteer (navigation, screenshots, form filling)
 - Server management via SSH, PM2, ports
 
-### 🖥 DevOps & System Administration
+### 🖥️ DevOps & System Administration
 - Server management: SSH, processes, ports, logs
 - PM2 service deployment and management
 - Resource monitoring (CPU, RAM, disk)
@@ -67,14 +72,14 @@ Runs locally. Minimum words, maximum action.
 ## Installation
 
 ```bash
-# NPM (global)
-npm install -g @yernur/operator
-opr
-
-# Or from source
+# Clone and build
 git clone https://github.com/yrn-dev/operator.git
-cd operator && npm install && npm run build
-opr
+cd operator
+npm install
+npm run build
+
+# Or install via npm
+npm install -g @yernur/operator
 ```
 
 ## Quick Start
@@ -116,11 +121,26 @@ opr
 | `puppeteer_*` | Browser automation |
 | MCP tools | External API server integration |
 
+## Skills
+
+Extend operator with additional capabilities:
+
+```bash
+# Image generation (Alem AI Plus)
+operator install https://github.com/yrn-dev/operator-alem-image-plus
+```
+
+Available skills:
+- **Alem Image Plus** — text-to-image generation (portraits, product shots, posters, etc.)
+
 ## Usage Examples
 
 ```
 # Write a script
 "write a python script to parse CSV and plot a graph"
+
+# Generate an image
+"create a cyberpunk city poster with neon lights"
 
 # Research
 deep_research(query="comparison of neural networks for computer vision 2025")
