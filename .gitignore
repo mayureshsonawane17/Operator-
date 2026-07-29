@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment (may contain secrets)
+.env
+.env.*
+.envrc
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Configuration (user-specific, per env)
+.opr/
+
+# Shrinkwrap (regenerate per env)
+npm-shrinkwrap.json
